@@ -141,6 +141,7 @@ class FilmController extends Controller
     }
     public function createFilm(Request $request)
     {
+       
         $name = $request->input('name');
         $year = $request->input('year');
         $genre = $request->input('genre');

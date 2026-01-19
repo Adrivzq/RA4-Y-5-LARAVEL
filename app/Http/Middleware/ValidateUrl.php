@@ -16,6 +16,7 @@ class ValidateUrl
      */
     public function handle(Request $request, Closure $next)
     {
+        
 
         $url = $request->route('url');
         if (!is_null($url) && !filter_var($url, FILTER_VALIDATE_URL)) {
