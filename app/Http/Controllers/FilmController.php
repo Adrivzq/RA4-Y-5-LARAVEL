@@ -2,11 +2,15 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Routing\Matching\HostValidator;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Http\Request;
+use Psy\Readline\HoaConsole;
 
 class FilmController extends Controller
 {
+  
+
 
     /**
      * Read films from storage
@@ -75,6 +79,7 @@ class FilmController extends Controller
         }
         return view('films.list', ["films" => $year_films, "title" => $title]);
     }
+
     public function sortFilms()
     {
 
@@ -139,6 +144,7 @@ class FilmController extends Controller
         }
         return view("films.list", ["films" => $films_filtered, "title" => $title]);
     }
+
     public function createFilm(Request $request)
     {
        
