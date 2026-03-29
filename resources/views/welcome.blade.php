@@ -46,6 +46,11 @@ welcome.blade.php
 
             <div @class(['col-md-4', 'mb-3'])>
             <div @class(['card', 'shadow-sm', 'p-3'])>
+                <a href="/filmout/countFilms">¿Cuántas Actores hay?</a>
+            </div>
+
+            <div @class(['col-md-4', 'mb-3'])>
+            <div @class(['card', 'shadow-sm', 'p-3'])>
                 <a href="/actorout/actors">Todos los actores</a>
             </div>
         </div>
