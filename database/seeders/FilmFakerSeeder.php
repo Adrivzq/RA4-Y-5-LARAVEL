@@ -24,5 +24,7 @@ class FilmFakerSeeder extends Seeder
                 'updated_at' => now(),
             ]);
         }
+        $this->command->info("Films table");
+
     }
 }
