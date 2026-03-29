@@ -23,5 +23,8 @@ class ActorFakerSeeder extends Seeder
                 'updated_at' => now(),
             ]);
         }
+       
+        $this->command->info("Actors table");
     }
+
 }
